@@ -2,11 +2,6 @@ const { DataTypes } = require ("sequelize");
 
 module.exports = (sequelize) =>{
     sequelize.define("History", {
-        Id:{
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            primaryKey: true
-        },
         UserId:{
             type: DataTypes.INTEGER,
             allowNull: false

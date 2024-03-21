@@ -1,13 +1,11 @@
-// const express = require('express');
-// const router = express.Router();
 const { Router } = require("express");
 
 const loginRoute = require("./login");
-const createUser = require("./createUser");
+const userRoute = require("./userRoute");
 
 const router = Router();
 
-router.use("/users", createUser);
+router.use("/users", userRoute);
 router.use("/login", loginRoute);
 
 
